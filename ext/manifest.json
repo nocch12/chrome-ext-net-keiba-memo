@@ -1,0 +1,14 @@
+{
+  "name": "Netkeiba Race Memo",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": " Chrome Extension",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://race.sp.netkeiba.com/*race/shutuba.html*"
+      ],
+      "js": ["build/static/js/bundle.js"]
+    }
+  ]
+}
