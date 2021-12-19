@@ -20,10 +20,6 @@ function App() {
   const [horseId, setHorseId] = useState('');
   // 馬名
   const [horseName, setHorseName] = useState('');
-  // 入力テキスト
-  const [input, setInput] = useState('');
-  // メモ保存情報
-  const { getMemo, setMemo } = useRaceStore(raceId);
 
   const getRaceId = () => {
     const url = new URL(window.location.href);
@@ -63,20 +59,15 @@ function App() {
   const handleOpen = (horse: THorse) => {
     setHorseId(horse.id);
     setHorseName(horse.name);
-    // setInput(getMemo(horse.id));
     setModalVisible(true);
   };
 
   // モーダルを閉じる
   const handleClose = () => {
     setModalVisible(false);
-    setMemo(horseId, input);
-    setInput('');
   };
 
   // テキストエリア入力
-  const handleInput = (e: ChangeEvent<HTMLTextAreaElement>) =>
-    setInput(e.target.value);
 
   return (
     <div>

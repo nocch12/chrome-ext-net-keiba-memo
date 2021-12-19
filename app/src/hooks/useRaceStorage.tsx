@@ -11,6 +11,8 @@ const useRaceStore = (id: string) => {
   const getMemo = (key: string) => value[key] ?? '';
 
   const setMemo = (key: string, text: string) => {
+    console.log(key, text);
+    
     setValue((prev) => ({ ...prev, [key]: text }));
   };
 

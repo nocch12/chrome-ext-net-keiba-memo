@@ -1,6 +1,5 @@
 import React, { VFC } from 'react';
 import { createPortal } from 'react-dom';
-import { IconButton } from '@chakra-ui/react';
 import { EditIcon } from '@chakra-ui/icons';
 
 type Props = {
