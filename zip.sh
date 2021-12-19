@@ -1,2 +1,2 @@
 #!/bin/bash
-zip -r ext.zip ext
+zip -r chrome-ext-net-keiba-memo.zip ext
